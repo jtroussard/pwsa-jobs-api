@@ -4,6 +4,18 @@ import logging
 logger = logging.getLogger(__name__)
 
 def scrape_jobs(html_content):
+    """
+    Scrapes job listings from the provided HTML content.
+
+    Parses the HTML content using BeautifulSoup to extract job details such as
+    title, location, date posted, and description from each job listing.
+
+    Args:
+        html_content (str): The HTML content of the job listings page.
+
+    Returns:
+        list: A list of dictionaries, each containing details of a job listing.
+    """
     soup = BeautifulSoup(html_content, 'html.parser')
     jobs = []
     logger.info("Initialized")
