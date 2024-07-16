@@ -37,6 +37,8 @@ Currently this is a non-production application. Eventually it will be design to 
 
 ## Contribution Guidelines
 
+Please feel free to fork, contribute, redesign, build off from.
+
 ### How to Contribute
 
 1. **Fork the Repository**:
