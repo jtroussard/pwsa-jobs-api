@@ -20,11 +20,13 @@ def fetch_job_data(url):
     Raises:
         requests.RequestException: An error occurred during the HTTP request.
     """
+    logger.info("bear town")
     try:
         logger.info(f"Request made (fetch_job_data): {url}")
         response = requests.get(url)
         response.raise_for_status() 
         logger.info(f"Request completed successfully (fetch_job_data): {url}")
         return response.text
-    except requests.RequestException as e:
+    except Exception as e:
         logger.error(f"Request failed (fetch_job_data): {e}", exc_info=True)
+        raise

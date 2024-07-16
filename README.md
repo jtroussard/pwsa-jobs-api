@@ -35,6 +35,16 @@ An API for scraping and serving job listings from the Pittsburgh Water & Sewer A
 
 Currently this is a non-production application. Eventually it will be design to be setup as a plug in service for a larger application.
 
+## Running Tests
+
+__Requires project dependencies be installed__
+
+1. **Run test command**
+```sh
+pytest tests/
+```
+
+
 ## Contribution Guidelines
 
 Please feel free to fork, contribute, redesign, build off from.
